@@ -1,0 +1,321 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Mos' ;
+    src: url('Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Mos', Times, serif;
+}
+  
+  body {
+    
+     color: #1c1c1c;
+    background-color: #0a0a0afc;
+    font-family: 'Mos', Times, serif;
+
+  }
+
+h1, h2, h3, h4, p {
+    color: #FFFFFF;
+
+    font-family: 'Mos', Times, serif;
+
+
+}
+
+/* NAVEGAÇÃO */
+
+nav {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mos', Times, serif;
+  }
+
+nav > a {
+    text-decoration: none;
+    color:#FFFFFF;
+    font-weight: 800;
+    font-size: 32px;
+    font-style: normal;
+    font-family: 'Mos', Times, serif;
+}
+
+nav ul {
+    display:flex;
+    flex-direction: line;
+    align-items: baseline;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    font-family: 'Mos', Times, serif;
+}
+
+nav ul ul{
+    display:none;
+
+}
+
+nav ul li {
+    text-align: center;
+    width: 100%;
+
+}
+
+
+nav ul li:hover > ul {
+    display:block;
+
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 0;
+    width: 100%;
+    text-decoration: none;
+    color: #FFFFFF;
+    
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+    color:black;
+    background: #FFFFFF;
+
+}
+
+
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+   
+     text-align: center;
+  
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color:black;
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+  
+  /* dropdown menu style */
+  .dropdown-menu {
+    display: none;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    background-color:black;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul {
+    display: block;
+  }
+  
+  .menu-bar ul li:hover .dropdown-menu ul li {
+    width: 150px;
+    padding: 10px;
+  }
+  @media (max-width: 768px){
+    .menu-bar ul li a{
+      
+      font-size: 10px;
+    }  
+    .menu-bar ul li a{
+      width: 100%;
+    }
+    .fas {
+        float: right;
+        margin-left: 20px;
+      }
+      
+    
+  }
+  @media (max-width:450px){
+    .menu-bar ul li a{
+          font-size: 10px;
+        }
+        .menu-bar ul li a{
+          width: 100%;
+        }
+        .fas {
+            float: right;
+            margin-left: 30px;
+          }
+  }
+  
+  
+
+
+/* CABEÇALHO */
+
+header {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    font-family: 'Mos', Times, serif;
+
+
+}
+header a{
+
+    color: #FFFFFF;
+    height: 50px;
+    font-weight: 750px;
+    font-size: 50px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-decoration: none;
+    font-family: 'Mos', Times, serif;
+}
+
+header a u{
+
+    color: #FFFFFF;
+    font-size: 100px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    font-family: 'Mos', Times, serif;
+}
+
+
+
+@media (max-width: 768px){
+    header a u{
+      
+      font-size: 50px;
+    }  
+    header a u{
+      width: 100%;
+    }
+    
+  }
+  @media (max-width:450px){
+    header a u{
+          font-size: 50px;
+        }
+        header a u{
+          width: 100%;
+        }
+  }
+  
+
+section {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 20px 20px;
+}
+
+section h2 {
+    color:firebrick
+
+}
+
+section p{
+    margin-bottom: 2.5em;
+    max-width: 1000px;
+
+}
+
+section img{
+    width: 33.3333333%;
+
+}
+
+
+#Contato {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px
+
+}
+
+#Contato h2, #Contato p{
+
+    color: #FFFFFF;
+
+}
+
+/* RODAPÉ */
+
+
+
+
+
+
+
+.mapBox{
+    width: 100%;
+   display: flex;
+   justify-content: center;
+    
+}
+
+.r{
+    margin: 20px;
+}
+.t{
+    display: block;
+
+    margin-top: 200px;
+    text-align: center;
+    border-radius: 50px;
+    
+   text-decoration:underline;
+   
+}
+.mar{
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+.container{
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 40px;
+}
+
+
+  
+  .img {
+      max-width: 100%;
+  }
+  
+ 
+li{
+    list-style: none;
+}

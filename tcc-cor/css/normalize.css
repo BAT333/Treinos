@@ -1,0 +1,499 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+ @font-face {
+  font-family: 'Mos' ;
+  src: url('Montserrat-Bold.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ html {
+    line-height: 1.15; /* 1 */
+    -webkit-text-size-adjust: 100%; /* 2 */
+  }
+  
+  /* Sections
+     ========================================================================== */
+  
+  /**
+   * Remove the margin in all browsers.
+   */
+   *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+  
+  body {
+    
+     color: #1c1c1c;
+    background-color: #0a0a0afc;
+    
+  }
+  
+  /**
+   * Render the `main` element consistently in IE.
+   */
+  
+  main {
+    display: block;
+  }
+  
+  /**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+  
+  h1 {
+
+    font-size: 2em;
+    margin: 0.67em 0;
+  }
+  
+  /* Grouping content
+     ========================================================================== */
+  
+  /**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+  
+  hr {
+    box-sizing: content-box; /* 1 */
+    height: 0; /* 1 */
+    overflow: visible; /* 2 */
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  pre {
+   /* 1 */
+    font-size: 1em; /* 2 */
+  }
+  
+  /* Text-level semantics
+     ========================================================================== */
+  
+  /**
+   * Remove the gray background on active links in IE 10.
+   */
+  
+  a {
+    background-color: transparent;
+  }
+  
+  /**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+  
+  abbr[title] {
+    border-bottom: none; /* 1 */
+    text-decoration: underline; /* 2 */
+    text-decoration: underline dotted; /* 2 */
+  }
+  
+  /**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+  
+  b,
+  strong {
+    font-weight: bolder;
+  }
+  
+  /**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+  
+  code,
+  kbd,
+  samp {
+   
+    font-size: 1em; /* 2 */
+  }
+  
+  /**
+   * Add the correct font size in all browsers.
+   */
+  
+  small {
+    font-size: 80%;
+  }
+  
+  /**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+  
+  sub,
+  sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  
+  sub {
+    bottom: -0.25em;
+  }
+  
+  sup {
+    top: -0.5em;
+  }
+  
+  /* Embedded content
+     ========================================================================== */
+  
+  /**
+   * Remove the border on images inside links in IE 10.
+   */
+  
+  img {
+    border-style: none;
+  }
+  
+  /* Forms
+     ========================================================================== */
+  
+  /**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+  
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    
+    font-size: 100%; /* 1 */
+    line-height: 1.15; /* 1 */
+    margin: 0; /* 2 */
+  }
+  
+  /**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+  
+  button,
+  input { /* 1 */
+    overflow: visible;
+  }
+  
+  /**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+  
+  button,
+  select { /* 1 */
+    text-transform: none;
+  }
+  
+  /**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+  
+  button,
+  [type="button"],
+  [type="reset"],
+  [type="submit"] {
+    -webkit-appearance: button;
+  }
+  
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  
+  button::-moz-focus-inner,
+  [type="button"]::-moz-focus-inner,
+  [type="reset"]::-moz-focus-inner,
+  [type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+  }
+  
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+  
+  button:-moz-focusring,
+  [type="button"]:-moz-focusring,
+  [type="reset"]:-moz-focusring,
+  [type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+  }
+  
+  /**
+   * Correct the padding in Firefox.
+   */
+  
+  fieldset {
+    padding: 0.35em 0.75em 0.625em;
+  }
+  
+  /**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+  
+  legend {
+    box-sizing: border-box; /* 1 */
+    color: inherit; /* 2 */
+    display: table; /* 1 */
+    max-width: 100%; /* 1 */
+    padding: 0; /* 3 */
+    white-space: normal; /* 1 */
+  }
+  
+  /**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+  
+  progress {
+    vertical-align: baseline;
+  }
+  
+  /**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  /**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+  
+  [type="checkbox"],
+  [type="radio"] {
+    box-sizing: border-box; /* 1 */
+    padding: 0; /* 2 */
+  }
+  
+  /**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+  
+  [type="number"]::-webkit-inner-spin-button,
+  [type="number"]::-webkit-outer-spin-button {
+    height: auto;
+  }
+  
+  /**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+  
+  [type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    outline-offset: -2px; /* 2 */
+  }
+  
+  /**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+  
+  [type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+  }
+  
+  /**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+  
+  ::-webkit-file-upload-button {
+    -webkit-appearance: button; /* 1 */
+    font: inherit; /* 2 */
+  }
+  
+  /* Interactive
+     ========================================================================== */
+  
+  /*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+  
+  details {
+    display: block;
+  }
+  
+  /*
+   * Add the correct display in all browsers.
+   */
+  
+  summary {
+    display: list-item;
+  }
+  
+  /* Misc
+     ========================================================================== */
+  
+  /**
+   * Add the correct display in IE 10+.
+   */
+  
+  template {
+    display: none;
+  }
+  
+  /**
+   * Add the correct display in IE 10.
+   */
+  
+  [hidden] {
+    display: none;
+  }
+
+
+
+
+
+
+  
+
+
+
+
+  <!DOCTYPE html>
+  <html lang="pt-br">
+  <head>
+      <link rel="SHOTCUT ICON" href="img/icon2.jpeg">
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/carroussel.css">
+      
+      <link rel="stylesheet" href="css/roda.css">
+      <link rel="stylesheet" href="css/i.css">
+  
+      <title>ESTAMPARIA - LA CALLE</title>
+  </head>
+  <body>
+    
+      <header id="topo">
+           <a href="index.html"><u>ESTAMPARIA</u><br>LA CALLE</a>
+      </header>
+      <div class="menu-bar">
+          <div class="r">
+      <nav clss="menu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="roupas.html">Camisetas  <i class="fas fa-caret-down"></i></a></li>
+              <li><a href="contato.html">Contato <i class="fas fa-caret-down"></i></a>
+              
+              </li>
+              <li><a href="pagamento.html">Forma de pagamento <i class="fas fa-caret-down"></i></a>
+              
+              </li>
+            
+  
+              <li><a href="sobrenos.html">Sobre nós <i class="fas fa-caret-right"></i></a>
+                
+              </li>
+      
+              </ul>
+      </nav>
+  </div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="center">
+  
+      <img src="img/home.jpeg"  alt="foto da estamparia" class="img-responsive"  >
+             <img src="img/home 2.jpeg"  alt="foto da estamparia" class="img-responsive">
+      
+      
+      
+             <h1>Acompanhe nossas estampas</h1></div>
+             
+             <section class="if">
+                 
+                 <img class="hfoto" src="img/c1.jpeg"  alt="foto da estamparia"  >
+                 <img class="hfoto" src="img/c2.jpeg"  alt="foto da estamparia"  >
+                 <img class="hfoto" src="img/c3.jpeg"  alt="foto da estamparia" >
+             </section>
+  
+  
+  <footer>
+      <div class="main-content">
+          <div class="left box">
+              <h2> Sobre nós</h2>
+              <div class="content">
+                  <p>A La Calle é uma estamparia Silk Screen, com foco em personalização de camisetas com alta durabilidade e qualidade para seus clientes.</p>
+              
+                  <div class="social">
+                      <a href="tel:11973375804"><img src="img/contato.png" width="50" alt="whatsapp"  ></a>
+          <a href="https://www.instagram.com">   <img src="img/insta4.png" width="50"alt="insta"></a>
+          
+                  </div>
+                  
+              </div>
+          </div><!--left box-->
+          <div class="center box">
+              <h2>Endereço</h2>
+              <div class="content">
+                  <div class="place">
+  
+                      <a href="https://goo.gl/maps/zXhT68GnwqaoQuN16"><span class="text">Rua Moniz Freire, 33 - Horto Florestal, São Paulo - SP, 02376-090</span></a>
+                  </div>
+  
+                  <div class="phone">
+                      
+                      <a href="tel:11973375804"><span class="text">+55 11 973375804</span></a>
+                  </div>
+  
+                  <div class="email">
+                      
+                      <a href="mailto:Estamparialacalle@gmail.com"><span class="text">Estamparialacalle@gmail.com</span></a>
+                  </div>
+              </div>
+          </div>
+          <div class="right box">
+              <h2> Forma de pagamento</h2>
+              <div class="content">
+                  
+                  <div class="social">
+                  <img src="img/f.png" alt="">
+                  </div>
+                  <p>
+                      Para saber mais <span class="text"> <a  href="pagamento.html" class="">clique aqui</a></span>
+                  </p>
+              </div>
+          </div>
+          
+      </div><!--main-content-->
+      
+  </footer>
+  <nav>
+         
+      <a href="index.html"> Voltar a home</a></li>
+  
+  
+  </nav>
+  
+  <script> (function(){ var s = document.createElement('script'); var h = document.querySelector('head') || document.body; s.src = 'https://acsbapp.com/apps/app/dist/js/app.js'; s.async = true; s.onload = function(){ acsbJS.init({ statementLink : '', footerHtml : '', hideMobile : false, hideTrigger : false, disableBgProcess : false, language : 'en', position : 'right', leadColor : '#146FF8', triggerColor : '#146FF8', triggerRadius : '50%', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerIcon : 'people', triggerSize : 'bottom', triggerOffsetX : 20, triggerOffsetY : 20, mobile : { triggerSize : 'small', triggerPositionX : 'right', triggerPositionY : 'bottom', triggerOffsetX : 20, triggerOffsetY : 20, triggerRadius : '20' } }); }; h.appendChild(s); })(); </script>
+  </body>
+  </html>

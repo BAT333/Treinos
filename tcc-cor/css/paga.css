@@ -1,0 +1,70 @@
+@font-face {
+    font-family: 'Mos' ;
+    src: url('Montserrat-Bold.ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+.gg{
+    width: 250px;
+    display:center;
+}
+.mar{
+    align-items: center;
+    display:center;
+}
+.container{
+    align-items: center;
+    display: flex;
+    text-align: left;
+    margin-right: 10px;
+}
+@media (max-width: 768px){
+    .container{
+      
+      font-size: 20px;
+    }  
+    .container{
+      width: 100%;
+    }
+    .container{
+        display:block;
+        text-align: left;
+        margin-right: 1px;
+    }
+    .gg{
+        width: 100%;
+      }
+      .row{
+        align-items: center;
+        text-align: center;
+  
+      }
+    .gg{width: 350px;
+    height: 350px;
+    border-radius: 20px;}
+    
+  }
+  @media (max-width:450px){
+    .container{
+          font-size: 10px;
+        }
+        .container{
+          width: 100%;
+        }
+        .container{
+            display:block;
+            text-align: left;
+            margin-right: 1px;
+        }
+        .gg{
+            width: 100%;
+          }
+          .row{
+            align-items: center;
+            text-align: center;
+      
+          }
+        .gg{width: 150px;
+            height: 150px;
+            border-radius: 20px;}
+  }

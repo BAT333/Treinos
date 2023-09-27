@@ -1,0 +1,34 @@
+.center{
+ text-align: center;
+ 
+}
+.img-responsive{
+    width: 500px;
+    height: 500px;
+}
+@media (max-width: 768px){
+    .center{
+      
+      font-size: 15px;
+    }  
+    .center{
+      width: 100%;
+    }
+    .img-responsive{
+      width: 100%;
+    }
+    .img-responsive{width: 350px;
+    height: 350px;}
+    
+  }
+  @media (max-width:450px){
+    .center{
+          font-size: 10px;
+        }
+        .center{
+          width: 100%;
+        }
+        .img-responsive{ width: 100%;}
+        .img-responsive{width: 150px;
+            height: 150px;}
+  }
